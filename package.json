@@ -1,0 +1,12 @@
+{
+	"name": "blades-npc-gen",
+	"version": "1.0.0",
+	"description": "A bot to generate NPCs",
+	"main": "bot.js",
+	"author": "Ro Avery",
+	"dependencies": {
+		"discord.io": "2.5.3",
+		"request": "2.87.0",
+		"winston": "2.4.2"
+	}
+}
