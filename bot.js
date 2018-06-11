@@ -12,7 +12,7 @@ client.on("ready", () => {
     console.log("bot has started!");
 });
 
-client.on("message", async message => {
+client.on("message", (message) => {
     if (message.author.bot) return;
 
     if (message.content.indexOf(config.prefix) !== 0) return;
