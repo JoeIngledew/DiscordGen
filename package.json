@@ -8,5 +8,8 @@
 		"discord.io": "2.5.3",
 		"request": "2.87.0",
 		"winston": "2.4.2"
+	},
+	"scripts": {
+		"start": "bot.js"
 	}
 }
