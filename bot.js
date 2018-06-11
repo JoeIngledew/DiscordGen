@@ -3,6 +3,8 @@ const config = require("./config.json");
 const secrets = require("./secrets.json");
 const request = require('request')
 
+console.log("Starting bot...");
+
 const client = new Discord.Client({
     token: secrets.token,
     autorun: true
@@ -32,3 +34,7 @@ client.on("message", (message) => {
         message.channel.send("did not recognise your request! sorry!");
     }
 });
+
+client.login(secrets.token);
+
+console.log("Bot has logged in!");
