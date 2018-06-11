@@ -1,15 +1,12 @@
 const Discord = require('discord.io');
+const config = require("./config.json");
+const secrets = require("./secrets.json");
+const request = require('request')
 
 const client = new Discord.Client({
     token: secrets.token,
     autorun: true
 });
-
-const request = require('request')
-
-const config = require("./config.json");
-
-const secrets = require("./secrets.json")
 
 client.on("ready", () => {
     console.log("bot has started!");
