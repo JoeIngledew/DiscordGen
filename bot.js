@@ -1,6 +1,9 @@
-const Discord = require("discord.js");
+const Discord = require('discord.io');
 
-const client = new Discord.Client();
+const client = new Discord.Client({
+    token: secrets.token,
+    autorun: true
+});
 
 const request = require('request')
 
@@ -32,5 +35,3 @@ client.on("message", (message) => {
         message.channel.send("did not recognise your request! sorry!");
     }
 });
-
-client.login(secrets.token);
