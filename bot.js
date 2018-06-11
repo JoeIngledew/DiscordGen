@@ -6,8 +6,7 @@ var request = require('request')
 console.log("Starting bot...");
 
 var client = new Discord.Client({
-    token: secrets.token,
-    autorun: true
+    token: secrets.token
 });
 
 client.on('ready', function() {
