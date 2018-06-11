@@ -14,9 +14,13 @@ client.on('ready', function() {
 });
 
 client.on('message', function(user, userID, channelID, message, event) {
+    console.log("A message has been posted, checking I need to act...");
     if (message === "-gen") {
+	console.log("Woo! I have been called! Makin an NPC");
         request(secrets.apiUrl, { json: true }, (err, res, body) => {
             if (err) { return console.log(err); }
+	    console.log("got this:");
+            console.log(body);
             client.sendMessage({
                 to: channelID,
                 message: body.sampleDesc
