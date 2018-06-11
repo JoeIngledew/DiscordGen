@@ -26,4 +26,6 @@ client.on('message', function(user, userID, channelID, message, event) {
     }
 });
 
+client.connect();
+
 console.log("Bot has logged in!");
