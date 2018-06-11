@@ -35,6 +35,4 @@ client.on("message", (message) => {
     }
 });
 
-client.login(secrets.token);
-
 console.log("Bot has logged in!");
